@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Swaroopi 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://i.pinimg.com/originals/2e/0b/fd/2e0bfd159fe4f06a3ad1842be5e3ff9e.gif');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 90%;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    button {
+      font-size: 1.2em;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+
+    .hug-animation {
+      display: none;
+      margin-top: 20px;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.5); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Swaroopi ❤️</h1>
+    <p>I will always be there for you forever. I'm nothing without you, you make me complete.</p>
+    <button onclick="showHug()">Yes I will 💖</button>
+    <div class="hug-animation" id="hug">
+      <img src="https://i.pinimg.com/originals/fd/fb/93/fdfb93dfdd1a4436fc4cf69b25aaec43.gif" alt="hug gif" style="max-width:100%; border-radius: 15px;">
+      <p style="margin-top: 10px;">Let’s grow old together 🤍</p>
+    </div>
+  </div>
+
+  <script>
+    function showHug() {
+      document.getElementById('hug').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
